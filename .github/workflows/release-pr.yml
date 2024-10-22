@@ -19,6 +19,6 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: pnpm run dev:prepare && pnpm run prepack
+        run: pnpm run prepack
 
       - run: pnpx pkg-pr-new publish

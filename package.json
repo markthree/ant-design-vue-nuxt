@@ -1,6 +1,6 @@
 {
   "name": "@ant-design-vue/nuxt",
-  "version": "1.4.4",
+  "version": "1.4.5",
   "description": "ant-design-vue-nuxt module",
   "repository": "vueComponent/ant-design-vue-nuxt",
   "license": "MIT",
@@ -21,7 +21,7 @@
     "access": "public"
   },
   "scripts": {
-    "prepack": "nuxt-module-build build",
+    "prepack": "pnpm run dev:prepare && nuxt-module-build build",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
